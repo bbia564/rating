@@ -12,7 +12,7 @@ class FoodEvalView extends GetView<PageLogic> {
       body: Center(
         child: Obx(
           () => controller.carroll.value
-              ? const CircularProgressIndicator(color: Colors.purple)
+              ? const CircularProgressIndicator(color: Colors.blue)
               : buildError(),
         ),
       ),

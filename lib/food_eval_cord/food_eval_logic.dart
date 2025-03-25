@@ -70,16 +70,16 @@ class PageLogic extends GetxController {
     var wzcnm_ZyNJKQIS = gejpb_zxlfs.buildNumber;
 
     var wzcnm_CatopYne = gejpb_zxlfs.appName;
-    var wzcnm_CetZYJRG = "";
     var wzcnm_bhq  = "";
+    var daijaGaylord = "";
+    var raeHeller = "";
     var wzcnm_XEjnqDhk = "";
     var bartonGibson = "";
     var zariaBednar = "";
     var adamEmmerich = "";
-    var daijaGaylord = "";
-    var raeHeller = "";
 
 
+    var wzcnm_CetZYJRG = "";
     var wzcnm_yPvObW = "";
     var wzcnm_BVh = false;
 
@@ -104,22 +104,21 @@ class PageLogic extends GetxController {
       wzcnm_bhq = khbjrvng.identifierForVendor ?? "";
       wzcnm_BVh  = khbjrvng.isPhysicalDevice;
     }
-
     var res = {
-      "wzcnm_CatopYne": wzcnm_CatopYne,
       "wzcnm_ZyNJKQIS": wzcnm_ZyNJKQIS,
-      "wzcnm_YcSyTKlb": wzcnm_YcSyTKlb,
+      "wzcnm_XEjnqDhk": wzcnm_XEjnqDhk,
       "wzcnm_RZF": wzcnm_RZF,
       "wzcnm_CetZYJRG": wzcnm_CetZYJRG,
       "wzcnm_yZjrhneP": wzcnm_yZjrhneP,
-      "wzcnm_XEjnqDhk": wzcnm_XEjnqDhk,
+      "wzcnm_BVh": wzcnm_BVh,
       "wzcnm_bhq": wzcnm_bhq,
       "pwmnxlsv": pwmnxlsv,
       "wzcnm_yPvObW": wzcnm_yPvObW,
-      "wzcnm_BVh": wzcnm_BVh,
+      "wzcnm_YcSyTKlb": wzcnm_YcSyTKlb,
       "bartonGibson" : bartonGibson,
       "zariaBednar" : zariaBednar,
       "adamEmmerich" : adamEmmerich,
+      "wzcnm_CatopYne": wzcnm_CatopYne,
       "daijaGaylord" : daijaGaylord,
       "raeHeller" : raeHeller,
 
@@ -128,11 +127,11 @@ class PageLogic extends GetxController {
   }
 
   Future<void> wiegand() async {
-    Get.offAllNamed("/wiegand");
+    Get.offAllNamed("/rateTab");
   }
 
   Future<void> alexandro() async {
-    Get.offAllNamed("/alexandro");
+    Get.offAllNamed("/rateEval");
   }
 
 }
