@@ -42,12 +42,13 @@ class FoodDatabaseService extends GetxService {
   Future _onCreate(Database db, int version) async {
     await db.execute('''
       CREATE TABLE $table(
-        $columnId INTEGER PRIMARY KEY,
+        $columnId INTEGER PRIMARY KEY AUTOINCREMENT,
         $columnImageBytes BLOB NOT NULL,
         $columnRate REAL NOT NULL,
         $columSource TEXT NOT NULL,
         $columnType INTEGER NOT NULL,
-        $columnDate TEXT NOT NULL
+        $columnDate TEXT NOT NULL,
+        UNIQUE($columnDate) ON CONFLICT REPLACE
       )
     ''');
   }
